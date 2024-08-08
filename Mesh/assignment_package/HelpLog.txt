@@ -1,0 +1,76 @@
+****************************************************************************************************
+											HELP LOG
+										HW6 - Half-Edge Mesh
+****************************************************************************************************
+
+
+
+----------------------------------------------------------------------------------------------------
+Date - 3/13/2024
+Time - 8:15
+
+Query - Static member variables
+
+Sources -
+1.) https://www.geeksforgeeks.org/static-keyword-cpp/
+2.) https://en.cppreference.com/w/cpp/language/static
+3.) https://www.tutorialspoint.com/cplusplus/cpp_static_members.htm
+----------------------------------------------------------------------------------------------------
+Date - 3/13/2024
+Time - 11:12
+
+Query - Spliting strings in QT
+
+Sources -
+1.) https://forum.qt.io/topic/132270/how-to-split-string-by-2-tocken-in-c
+2.) https://stackoverflow.com/questions/37525491/how-can-i-split-a-qstring-by-a-delimiter-and-not-if-that-delimiter-is-somewhere
+----------------------------------------------------------------------------------------------------
+Date - 3/14/2024
+Time - 16:15
+
+Query - Converting QString to float
+
+Sources -
+1.) https://forum.qt.io/topic/134869/type-conversion-from-qstring-to-float-and-double
+2.) https://stackoverflow.com/questions/22383820/qt-converting-float-to-qstring
+3.) https://www.qtcentre.org/threads/10674-QString-toFloat()-precision
+----------------------------------------------------------------------------------------------------
+Date - 3/14/2024
+Time - 21:47
+
+Query - Inheriting from Abstract classes
+
+Sources -
+1.) https://stackoverflow.com/questions/4785207/c-and-inheritance-in-abstract-classes
+2.) https://www.educative.io/answers/what-is-a-cpp-abstract-class
+3.) https://isocpp.org/wiki/faq/strange-inheritance#link-errs-missing-vtable
+4.) https://stackoverflow.com/questions/4321590/c-undefined-reference-to-vtable
+----------------------------------------------------------------------------------------------------
+Date - 3/14/2024
+Time - 21:55
+
+Query - make_unique and unique_ptr in C++
+
+Sources -
+1.) https://stackoverflow.com/questions/37514509/advantages-of-using-stdmake-unique-over-new-operator
+2.) https://en.cppreference.com/w/cpp/memory/unique_ptr/make_unique
+3.) https://www.geeksforgeeks.org/unique_ptr-in-cpp/
+4.) https://herbsutter.com/2013/05/29/gotw-89-solution-smart-pointers/
+----------------------------------------------------------------------------------------------------
+Date - 4/7/2024
+Time - 03:55
+
+Query - Unordered maps with pair
+
+Sources -
+1.) https://www.geeksforgeeks.org/how-to-create-an-unordered_map-of-pairs-in-c/
+2.) https://stackoverflow.com/questions/32685540/why-cant-i-compile-an-unordered-map-with-a-pair-as-key
+----------------------------------------------------------------------------------------------------
+Date - 4/7/2024
+Time - 03:55
+
+Query - Unordered maps in C++
+
+Sources -
+1.) https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/
+----------------------------------------------------------------------------------------------------

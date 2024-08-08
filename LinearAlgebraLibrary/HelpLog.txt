@@ -1,0 +1,46 @@
+****************************************************************************************************
+											HELP LOG
+									HW1 - Linear Algebra Library
+****************************************************************************************************
+
+Date - 1/27/2024
+Time - 20:38
+
+Query - Constructors - How to initialize and types
+
+Sources -
+1.) https://www.geeksforgeeks.org/constructors-c/
+2.) https://stackoverflow.com/questions/1711990/what-is-this-weird-colon-member-syntax-in-the-constructor
+
+----------------------------------------------------------------------------------------------------
+
+Date - 1/27/2024
+Time - 20:54
+
+Query - Member Initializer List - What is it and when to use
+
+Sources -
+1.) https://www.geeksforgeeks.org/when-do-we-use-initializer-list-in-c/
+
+----------------------------------------------------------------------------------------------------
+
+Date - 1/27/2024
+Time - 21:15
+
+Query - Throwing out of range exception - What is it and how to use
+
+Sources -
+1.) https://stackoverflow.com/questions/2709719/throwing-out-of-range-exception-in-c
+
+----------------------------------------------------------------------------------------------------
+
+Date - 1/28/2024
+Time - 16:15
+
+Query - How to access static member functions of a class
+
+Sources -
+1.) https://www.learncpp.com/cpp-tutorial/static-member-functions/
+2.) https://stackoverflow.com/questions/31305717/member-function-with-static-linkage
+
+----------------------------------------------------------------------------------------------------
