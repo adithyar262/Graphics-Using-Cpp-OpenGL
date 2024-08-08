@@ -1,0 +1,35 @@
+****************************************************************************************************
+											HELP LOG
+									HW1 - Linear Algebra Library
+****************************************************************************************************
+
+Date - 2/4/2024
+Time - 10:28
+
+Query - Smart Pointers
+
+Sources -
+1.) https://www.geeksforgeeks.org/smart-pointers-cpp/
+
+----------------------------------------------------------------------------------------------------
+
+Date - 2/3/2024
+Time - 20:12
+
+Query - Unique pointers
+
+Sources -
+1.) https://www.geeksforgeeks.org/unique_ptr-in-cpp/
+2.) https://www.geeksforgeeks.org/cpp-14-make_unique/
+
+----------------------------------------------------------------------------------------------------
+
+Date - 2/3/2024
+Time - 21:15
+
+Query - Virtual and abstract classes
+
+Sources -
+1.) https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/
+
+----------------------------------------------------------------------------------------------------

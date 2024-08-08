@@ -1,0 +1,16 @@
+****************************************************************************************************
+											HELP LOG
+							HW05 - Post-Processing and Noise Functions
+****************************************************************************************************
+
+----------------------------------------------------------------------------------------------------
+Date - 4/1/2024
+Time - 22:15
+
+Query - Bling Phong Reflection
+
+Sources -
+1.) https://learnopengl.com/Advanced-Lighting/Advanced-Lighting
+2.) http://www.science-and-fiction.org/rendering/glsl_7.html
+3.) https://lettier.github.io/3d-game-shaders-for-beginners/blinn-phong.html
+----------------------------------------------------------------------------------------------------

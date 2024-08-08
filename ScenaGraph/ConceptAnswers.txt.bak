@@ -1,0 +1,46 @@
+Conceptual Questions
+---------------------------------------------------------------------------------------
+1. (5 pts) In mat4.h, there are several declarations of the operator* function. One declaration is vec4 operator*(const vec4 &v) const (line 89), while another is vec4 operator*(const vec4 &v, const mat4 &m) (line 106). Explain the mathematical difference in the output of these functions. Additionally, explain what each of the consts does in each function.
+Mathematical difference between "vec4 operator*(const vec4 &v) const" and "vec4 operator*(const vec4 &v, const mat4 &m)"
+---------------------------------------------------------------------------------------
+vec4 operator*(const vec4 &v) const
+
+This function within the Mat4 class performs the Matrix/vector multiplication (m * v). V is assumed to be a column vector and this function multiplies each row of the invoking matrix object with the corresponding vector value and sums it up.
+
+E.g. - M*v multiplication
+
+Since this is declared as a member function of the Mat4 class, there's implicitly a pointer t0 a Mat4 object as the first argument like vec4 operator*((Mat4* this), const vec4 &v) const.
+
+vec4 operator*(const vec4 &v, const mat4 &m)
+
+This function is outside the Mat4 class and performs the Vector/matrix multiplication (v * m). V is assumed to be a row vector and this function multiplies each column of the matrix m with the corresponding vector value and sums it up.
+
+E.g. -
+
+v*M Multiplication
+
+Note - The output of this computation is a row vector but I've shown it as a column vector for better visibility.
+
+To pass mat4 as the second argument of the class, we need to make sure that we declare this function outside the class.
+
+Role of each const
+
+In vec4 operator*(const vec4 &v) const -
+1. const vec4 &v - The argument v is being passed by reference and we make this variable a const to make sure we don't accidently modify the vector within the function.
+2. const at the end of the member function of a class means that, within the scope of this function, the invoking object is treated as const or read-only. Data access using the this-> keyword cannot be modified in class functions that are declared const. This function is not allowed to modify any member of the invoking class.
+
+In vec4 operator*(const vec4 &v, const mat4 &m) -
+
+Both the variables passed as argument to this function are passed by reference for memory optimization and these are made const to make sure they aren't modified within the function and are read-only variables.
+---------------------------------------------------------------------------------------
+ 
+---------------------------------------------------------------------------------------
+(5 pts) In vec4.h, there are two declarations of the operator[] function. Describe a situation in which only the first function (line 25) can be used, and describe a situation in which only the second function (line 28) can be used.
+Differences between both the functions operator[] functions -
+---------------------------------------------------------------------------------------
+1. The first function is a const function. This is done in order to make sure the invoking object is not modified within the function.
+
+2. The second function returns a float&, which is a reference to the value at index, whereas the first one returns a float, which is the value at current index.
+
+The first function, float operator[](unsigned int index) const is allowed to be invoked by both const and non-const objects. The second function, float& operator[](unsigned int index) cannot be invoked by const objects since the function is not a const, and the invoking object can be modified by the function, which is not allowed by the compiler.
+---------------------------------------------------------------------------------------

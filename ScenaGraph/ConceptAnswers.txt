@@ -1,0 +1,62 @@
+Conceptual Questions
+---------------------------------------------------------------------------------------
+1. (3 pts) In C++, what is a virtual function and how does it relate to object
+polymorphism? Say I have a class Base and a class Derived that inherits from Base.
+Both classes implement a non-virtual function called func(). If func() is invoked by
+dereferencing a Base* that actually points to an instance of Derived, which
+implementation of func() will be called, and why?
+---------------------------------------------------------------------------------------
+In C++, a virtual function is a member function declared within a base class that is
+intended to be overridden in derived classes. When a virtual function is declared in a
+base class, it allows derived classes to provide their own implementation of that
+function.
+
+Virtual functions enable dynamic binding or late binding, which means that the
+appropriate function implementation is determined at runtime based on the type of
+object referred to, rather than at compile time which is crucial for achieving
+polymorphism in object-oriented programming.
+
+If func() is invoked by dereferencing a Base* that actually points to an instance of
+Derived, the func() implementation in the Base class will be called since func() is not
+declared as virtual and the compile time implementation i.e. the Base function
+implementation will be executed.
+---------------------------------------------------------------------------------------
+ 
+---------------------------------------------------------------------------------------
+2. (2 pts) In polygon.cpp there is a constructor for the Polygon class that takes in a
+number of sides to construct a regular, convex polygon. There is a section of this
+constructor's body that sets up "indices" to construct triangles out of the polygon's
+perimeter vertices. Please draw how these triangles would be formed for a regular
+convex pentagon (five-sided polygon), and label each vertex with its index number.
+You may draw your image on a piece of paper and take a photograph, or create it in some
+sort of image editing software. Your drawing need not be perfect, just make sure it's
+understandable. In the end, please submit your drawing as a .png image.
+---------------------------------------------------------------------------------------
+ConceptQuestion2.png image uploaded to github
+---------------------------------------------------------------------------------------
+ 
+---------------------------------------------------------------------------------------
+3. (5 pts) If I want to write a function that builds my entire scene graph and returns
+its root node, what should the return type of the function be? Additionally, where in
+memory should I instantiate the nodes of my scene graph? Why should I instantiate my
+nodes in this portion of memory?
+---------------------------------------------------------------------------------------
+The root node will be of the type "unique_ptr". This dynamically assigns memory in the
+heap for our root node. Since "unique_ptr" creates a smart pointer while automatically
+deletes the pointer once the pointer goes out of scope, returning this pointer normally
+will not work since it goes out of scope.
+
+To return the pointer, we can use the following command -
+
+return std::move(Root);
+
+This makes sure the unique_pointer is properly moved to the new location before
+deallocating the memory.
+
+All the nodes should be created in the heap because they need to have a lifetime of
+the entire program and not just the function or the block they are declared in.
+Anything stored in stack has a scope and lifetime of only the block the variable is
+declared in, which isn't ideal for scene graph.
+---------------------------------------------------------------------------------------
+ 
+---------------------------------------------------------------------------------------
